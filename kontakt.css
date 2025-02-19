@@ -1,0 +1,13 @@
+.head h1 {
+text-align: center;
+font-weight: 700;
+font-size: 48px;
+margin-bottom: 10px;
+}
+
+.text {
+    font-display: flex;
+    text-justify: flex-end;
+    font-weight: 300;
+    margin: auto;
+}

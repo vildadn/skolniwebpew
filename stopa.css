@@ -12,12 +12,6 @@ body {
 }
 
 
-.pepp {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 
 header {
     background: #fff;
@@ -32,29 +26,31 @@ header .pepp {
 }
 
 .logo img {
-    max-height: 50px;
+    max-height: 50%;
+    max-width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
+
 
 .menu {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 .menu li a {
+    display: flex;
     text-decoration: none;
     color: #333;
     font-weight: bold;
     transition: color 0.3s;
 }
 
-.menu li a:hover {
-    color: #FFA500;
-}
-
 
 .banner {
-    background: url("planety.jpg") no-repeat center center;
+    background: url("ano.webp");
     background-size: cover;
     height: 700px;
     display: flex;
@@ -68,12 +64,13 @@ header .pepp {
 .banner-text h1 {
     font-weight: 700;
     font-size: 48px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .banner-text p {
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-top: auto;
+    margin-bottom: 10px;
 }
 
 .btn {
@@ -88,35 +85,49 @@ header .pepp {
 }
 
 .btn:hover {
-    background: #0056b3;
+    background: #03101f;
 }
 
 
 .služby {
     padding: 50px 0;
-    background: #fff;
+    background: #ecefe9;
     text-align: center;
 }
 
 .služby-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    display: flex;
+    
+    align-items: center;
+    gap: 15px;
     margin-top: 20px;
+
 }
 
 .služby-zbozi{
     background: #ed985b;
     color: white;
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px;
     transition: transform 0.3s;
+    
+}
+
+.služby-zbozi h3 {
+    margin-bottom: 15px;
+    
 }
 
 .služby-zbozi:hover {
     transform: translateY(-5px);
 }
 
+.cenovka {
+    font-weight: 700;
+    font-size: 48px;
+    margin-top: 50px;
+    color: #35838d;
+}
 
 .cenav {
     background: #fafaf8;
@@ -156,7 +167,7 @@ footer {
     color: white;
     margin-top: 20px;
 }
-=======
+
 #website {
     max-width: 1200px;
     margin: 0 auto;
@@ -170,9 +181,6 @@ header {
     border-bottom: 1px solid #F5B181;
 }
 
-.logo img {
-
-}
 
 nav ul {
     list-style: none;
