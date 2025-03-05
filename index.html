@@ -10,24 +10,24 @@
 <body>
     <header>
         <div class="pepp">
-            <div class="logo">
-                <img src="logo.png" alt="Logo firmy">
-            </div>
-            <nav>
+                <img src="logo.png" alt="Logofirmy" class="logo">
+        </div>
+            <nav class="menul">
                 <ul class="menu">
                     <li><a href="file:///C:/Users/vilik/Downloads/skolniweb/index.html">Úvod</a></li>
                     <li><a href="#">Služby</a></li>
                     <li><a href="#">Ceník</a></li>
                     <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">FAQ</a></li>
                 </ul>
+
+            <div class="objednej">
+                <li>
+                <a href="#" class="obj">Objednat konzultaci</a>
+            </li>
+            </div>
             </nav>
         </div>
-
-        <div class="login">
-            <a href="" class="login">login</a>
-            <a href="" class="login">register</a>
-        </div>
-
     </header>
 
     <section class="banner">
@@ -133,42 +133,67 @@
         </div>
     </section>
 
-    <section class="cenav">
-        <div class="pepp">
-            <h2>Proč si vybrat nás?</h2>
-            <div class="cena-grid">
-                <div class="cena">
-                    <h3>Moderní a efektivní web design</h3>
-                    <p>Vytváříme moderní, responzivní a vizuálně atraktivní webové stránky, které nejen skvěle vypadají,
-                         ale také jsou funkční a optimalizované pro vyhledávače. Zaměřujeme se na intuitivní
-                         uživatelské rozhraní a vysokou rychlost načítání, což zlepšuje zážitek návštěvníků a pomáhá klientům dosáhnout jejich cílů</p>
-                </div>
-                <div class="cena">
-                    <h3>Standard</h3>
-                    <p>od 3000 Kč</p>
-                </div>
-                <div class="cena">
-                    <h3>Premium</h3>
-                    <p>od 5000kč</p>
-                </div>
+    
+    <div class="container">
+        <div class="section">
+            <div class="text">
+                <h2>Rychlé dodání</h2>
+                <p>První návrh dostanete už za 1-3 dny. Revize zvládneme do 24 hodin.</p>
+            </div>
+            <div class="image">
+                <img src="edit.webp" alt="Illustration">
             </div>
         </div>
-    </section>
+
+        <div class="section">
+            <div class="image">
+                <img src="webpic.jpeg" alt="Illustration">
+            </div>
+            <div class="text">
+                <h2>Kvalitní práce</h2>
+                <p>Naše videa jsou profesionální, přehledná a přizpůsobená vašim potřebám.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="text">
+                <h2>Bez starostí</h2>
+                <p>O vše se postaráme. Vy se můžete soustředit na svůj byznys.</p>
+            </div>
+            <div class="image">
+                <img src="banner.webp" alt="Illustration">
+            </div>
+        </div>
+    </div>
+
 
     <footer>
 
-<script>
-    var map = L.map('map').setView([17.4703449, 49.0649466], 17);
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d462.11857933645115!2d17.470123108722955!3d49.065021939378845!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47131448ae70abf7%3A0x9240f0d4c6ae!2sLechova%20690%2C%20686%2001%20Uhersk%C3%A9%20Hradi%C5%A1t%C4%9B%201!5e0!3m2!1scs!2scz!4v1741180472523!5m2!1scs!2scz" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
+    <script>
+        const themeSwitch = document.querySelector('.theme-switch');
 
-L.marker([51.5, -0.09]).addTo(map)
-    .bindPopup('A pretty CSS popup.<br> Easily customizable.')
-    .openPopup();
+        themeSwitch.addEventListener('click', () => {
+
+            //když má tlačítko třídu dark, tak ji odebereme a naopak
+            if (themeSwitch.classList.contains('dark')) {
+
+                themeSwitch.classList.remove('dark');
+                document.body.classList.remove('dark-theme');
+            
+            } else {
+                
+                themeSwitch.classList.add('dark');
+                document.body.classList.add('dark-theme');
+            
+            }
+
+        });
 
 </script>
+</div>
 
         <p>&copy; 2025 Flick</p>
     </footer>
